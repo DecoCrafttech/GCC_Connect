@@ -8,40 +8,35 @@ import smatricLogo from "../Assets/Images/smatric-logo.png";
 
 const LogoRow = () => {
   const logos = [
-      { src: bayernLogo, alt: "Bayern International" },
-      { src: evolvedLogo, alt: "Evolved" },
-      { src: wolvesLogo, alt: "Wolves Partnership" },
-      { src: sauterLogo, alt: "Sauter" },
-      { src: acrevisLogo, alt: "Acrevis" },
-      { src: smatricLogo, alt: "Smatric" },
+    { src: bayernLogo, alt: "Bayern International" },
+    { src: evolvedLogo, alt: "Evolved" },
+    { src: wolvesLogo, alt: "Wolves Partnership" },
+    { src: sauterLogo, alt: "Sauter" },
+    { src: acrevisLogo, alt: "Acrevis" },
+    { src: smatricLogo, alt: "Smatric" },
   ];
 
   return (
-    <div className="container mt-3 mb-5" style={styles.container}>
-      {logos.map((logo, index) => (
-        <img
-          key={index}
-          src={logo.src}
-          alt={logo.alt}
-          style={styles.logo}
-        />
-      ))}
+    <div className="container mt-3 mb-5">
+      <div className="row justify-content-center align-items-center">
+        {logos.map((logo, index) => (
+          <div key={index} className="col-6 col-sm-4 col-lg-2 col-md-3 mb-3 text-center">
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              style={styles.logo}
+              className="img-fluid"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
 const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px",
-    
-    
-  },
   logo: {
     maxHeight: "50px",
-    margin: "0 10px",
   },
 };
 

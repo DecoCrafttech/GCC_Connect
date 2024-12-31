@@ -1,12 +1,13 @@
 import React from "react";
+import Footerlogomark from "../Assets/Images/Footer-Logo-Mark.png";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content container">
-        <div className="footer-links">
-            
-          <div className="footer-column">
+        <div className="footer-links row d-flex flex-wrap mt-5 flex-md-nowrap">
+          {/* About Section */}
+          <div className="footer-column col-12 col-md">
             <h4>About</h4>
             <ul>
               <li>About Us</li>
@@ -16,7 +17,9 @@ const Footer = () => {
               <li>Careers</li>
             </ul>
           </div>
-          <div className="footer-column">
+
+          {/* Models Section */}
+          <div className="footer-column col-12 col-md">
             <h4>Models</h4>
             <ul>
               <li>Captive Model</li>
@@ -24,7 +27,9 @@ const Footer = () => {
               <li>Shared Services Model</li>
             </ul>
           </div>
-          <div className="footer-column">
+
+          {/* Industries Section */}
+          <div className="footer-column col-12 col-md">
             <h4>Industries</h4>
             <ul>
               <li>Banking & Finance</li>
@@ -35,7 +40,9 @@ const Footer = () => {
               <li>Power & Utilities</li>
             </ul>
           </div>
-          <div className="footer-column">
+
+          {/* Contact Section */}
+          <div className="footer-column col-12 col-md">
             <h4>Contact Us</h4>
             <ul>
               <li>contact@gcc.com</li>
@@ -47,17 +54,34 @@ const Footer = () => {
               <i className="fab fa-linkedin-in"></i>
             </div>
           </div>
-        </div>
 
-        <div className="get-in-touch">
-          <span className="get-in-touch-line">Get in</span>
-          <span className="get-in-touch-line">Touch →</span>
+          {/* Logo Section */}
+          <div className="footer-column col-12 col-md text-center">
+            <img src={Footerlogomark} alt="Footer Logo" />
+          </div>
         </div>
       </div>
-      <div className="footer-bottom mt-5">
-        <p>©2024 GCC Connect. All Rights Reserved. Designed and Maintained by dChai</p>
-        <p>Terms & Conditions • Privacy Policy • Sitemap</p>
+      <div className="container  col-12">
+        <div className="row align-items-center">
+          {/* Footer Bottom Left */}
+          <div className="col-12 col-md-6 text-start">
+            <div className="footer-bottom mt-5">
+              <p>©2024 GCC Connect, All Rights Reserved. Designed and Maintained by eGhai</p>
+              <p>Terms & Conditions • Privacy Policy • Sitemap</p>
+            </div>
+          </div>
+
+          {/* Get in Touch Right */}
+          <div className="col-12 col-md-6 mt-3 text-end">
+            <div className="get-in-touch">
+              <span className="get-in-touch-line">Get in</span>
+              <span className="get-in-touch-line">Touch →</span>
+            </div>
+          </div>
+        </div>
       </div>
+
+
     </footer>
   );
 };

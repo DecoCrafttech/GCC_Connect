@@ -589,6 +589,7 @@ th {
 .section-one {
   background-color: var(--section-one-bg);
   padding: 2rem 0;
+  height: auto;
 }
 
 .carousel-item-cls {
@@ -1240,7 +1241,7 @@ color: #fff;
 
 .get-in-touch-line {
   font-family: "Paralucent", sans-serif;
-  font-size: 86px;
+  font-size: 70px;
   font-weight: 200;
   line-height: 105px;
   margin: 0;
@@ -1248,13 +1249,13 @@ color: #fff;
 }
 
 .get-in-touch-line+.get-in-touch-line {
-  margin-top: -20px;
+  margin-top: -40px;
   /* Adjust line overlap */
 }
 
 /* Footer Bottom */
 .footer-bottom {
-  text-align: center;
+  text-align: start;
   font-size: 12px;
   margin-top: 40px;
 }
