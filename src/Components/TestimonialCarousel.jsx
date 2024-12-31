@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Icons from 'Utils/Icons';
 
 const testimonials = [
   {
@@ -53,7 +54,7 @@ const TestimonialCarousel = () => {
         </div>
       </div>
       <div className="testimonial-image">
-        <div className="image-placeholder">📷</div>
+        <div className="image-placeholder">{Icons.TalentAcquisitonIcon}</div>
       </div>
 
         </div>

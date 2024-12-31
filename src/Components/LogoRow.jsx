@@ -1,13 +1,19 @@
 import React from "react";
+import bayernLogo from "../Assets/Images/acrevis-logo.png";
+import evolvedLogo from "../Assets/Images/evolved-logo.png";
+import wolvesLogo from "../Assets/Images/wolves-logo.png";
+import sauterLogo from "../Assets/Images/sauter-logo.png";
+import acrevisLogo from "../Assets/Images/acrevis-logo.png";
+import smatricLogo from "../Assets/Images/smatric-logo.png";
 
 const LogoRow = () => {
   const logos = [
-    { src: "path/to/bayern-logo.png", alt: "Bayern International" },
-    { src: "path/to/evolved-logo.png", alt: "Evolved" },
-    { src: "path/to/wolves-logo.png", alt: "Wolves Partnership" },
-    { src: "path/to/sauter-logo.png", alt: "Sauter" },
-    { src: "path/to/acrevis-logo.png", alt: "Acrevis" },
-    { src: "path/to/smatric-logo.png", alt: "Smatric" },
+      { src: bayernLogo, alt: "Bayern International" },
+      { src: evolvedLogo, alt: "Evolved" },
+      { src: wolvesLogo, alt: "Wolves Partnership" },
+      { src: sauterLogo, alt: "Sauter" },
+      { src: acrevisLogo, alt: "Acrevis" },
+      { src: smatricLogo, alt: "Smatric" },
   ];
 
   return (
